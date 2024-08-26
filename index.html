@@ -1,13 +1,12 @@
 
-    <button onclick="update()">Add</button>
-    <div id="result"></div>
+    <button id = "btn" onclick="update()">change color</button>
+
 
     <script>
-        var div = document.getElementById("result");
-        function update() {
-            var listele = document.createElement("h1");
-            listele.textContent = "Hello"; 
-            div.append(listele);
+        var btn = document.getElementById("btn")
+        function update(){
+            btn.style.backgroundColor="red"
         }
+
     </script>
 
