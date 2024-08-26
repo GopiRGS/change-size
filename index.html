@@ -1,11 +1,13 @@
-<input id="inputbox" onkeyup="update()">
 
-<h1 id ="result"><h1>
-<script>
-    //select the box,button
-    var inputbox = document.getElementById("inputbox")
-    var result = document.getElementById("result")
-    function update(){
-        result.textContent=inputbox.value
-    }
-</script>
+    <button onclick="update()">Add</button>
+    <div id="result"></div>
+
+    <script>
+        var div = document.getElementById("result");
+        function update() {
+            var listele = document.createElement("h1");
+            listele.textContent = "Hello"; 
+            div.append(listele);
+        }
+    </script>
+
